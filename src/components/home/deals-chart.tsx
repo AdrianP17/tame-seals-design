@@ -19,7 +19,6 @@ const DealsChart = () => {
   const dealData = useMemo(() => {
     return mapDealsData(data?.data)
   }, [data?.data])
-  console.log(dealData)
   const config : AreaConfig = {
     data: dealData,
     xField: 'timeText',
